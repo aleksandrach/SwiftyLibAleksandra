@@ -1,0 +1,20 @@
+PODS:
+  - Adyen3DS2 (2.2.6)
+  - ProcessOut (2.15.3)
+
+DEPENDENCIES:
+  - Adyen3DS2
+  - ProcessOut
+
+SPEC REPOS:
+  trunk:
+    - Adyen3DS2
+    - ProcessOut
+
+SPEC CHECKSUMS:
+  Adyen3DS2: e683a519946e99a78adec8d89459e6eec53b0a4f
+  ProcessOut: e193c2ef2a4de1ccbd050868346d99bb91a3def4
+
+PODFILE CHECKSUM: 1b1581c22b063cdd7b6367fafc20e364632374e0
+
+COCOAPODS: 1.11.3

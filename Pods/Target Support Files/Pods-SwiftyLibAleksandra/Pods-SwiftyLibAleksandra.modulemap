@@ -1,0 +1,6 @@
+framework module Pods_SwiftyLibAleksandra {
+  umbrella header "Pods-SwiftyLibAleksandra-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -3,18 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A854E85D28F7F2DF00030E86 /* SwiftyLibAleksandra.docc in Sources */ = {isa = PBXBuildFile; fileRef = A854E85C28F7F2DF00030E86 /* SwiftyLibAleksandra.docc */; };
 		A854E85E28F7F2DF00030E86 /* SwiftyLibAleksandra.h in Headers */ = {isa = PBXBuildFile; fileRef = A854E85B28F7F2DE00030E86 /* SwiftyLibAleksandra.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A854E86528F7F42800030E86 /* SwiftyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = A854E86428F7F42800030E86 /* SwiftyLib.swift */; };
+		F88EF267AAB2F6929C29324C /* Pods_SwiftyLibAleksandra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC5867D584692FA7D592004 /* Pods_SwiftyLibAleksandra.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		140E2E75082C19B040AB9142 /* Pods-SwiftyLibAleksandra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyLibAleksandra.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyLibAleksandra/Pods-SwiftyLibAleksandra.debug.xcconfig"; sourceTree = "<group>"; };
+		1AC5867D584692FA7D592004 /* Pods_SwiftyLibAleksandra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyLibAleksandra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A854E85828F7F2DE00030E86 /* SwiftyLibAleksandra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyLibAleksandra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A854E85B28F7F2DE00030E86 /* SwiftyLibAleksandra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyLibAleksandra.h; sourceTree = "<group>"; };
 		A854E85C28F7F2DF00030E86 /* SwiftyLibAleksandra.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SwiftyLibAleksandra.docc; sourceTree = "<group>"; };
+		A854E86428F7F42800030E86 /* SwiftyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLib.swift; sourceTree = "<group>"; };
+		DB88048DD0A43482C489EDC3 /* Pods-SwiftyLibAleksandra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyLibAleksandra.release.xcconfig"; path = "Target Support Files/Pods-SwiftyLibAleksandra/Pods-SwiftyLibAleksandra.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,17 +28,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F88EF267AAB2F6929C29324C /* Pods_SwiftyLibAleksandra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C9D2EEBBBD424A3D2C94C15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AC5867D584692FA7D592004 /* Pods_SwiftyLibAleksandra.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A854E84E28F7F2DE00030E86 = {
 			isa = PBXGroup;
 			children = (
 				A854E85A28F7F2DE00030E86 /* SwiftyLibAleksandra */,
 				A854E85928F7F2DE00030E86 /* Products */,
+				EDF53F69A36CD3FD6768F95C /* Pods */,
+				4C9D2EEBBBD424A3D2C94C15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,8 +66,19 @@
 			children = (
 				A854E85B28F7F2DE00030E86 /* SwiftyLibAleksandra.h */,
 				A854E85C28F7F2DF00030E86 /* SwiftyLibAleksandra.docc */,
+				A854E86428F7F42800030E86 /* SwiftyLib.swift */,
 			);
 			path = SwiftyLibAleksandra;
+			sourceTree = "<group>";
+		};
+		EDF53F69A36CD3FD6768F95C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				140E2E75082C19B040AB9142 /* Pods-SwiftyLibAleksandra.debug.xcconfig */,
+				DB88048DD0A43482C489EDC3 /* Pods-SwiftyLibAleksandra.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A854E86128F7F2DF00030E86 /* Build configuration list for PBXNativeTarget "SwiftyLibAleksandra" */;
 			buildPhases = (
+				A57FEEC3E9362D77E8A420E5 /* [CP] Check Pods Manifest.lock */,
 				A854E85328F7F2DE00030E86 /* Headers */,
 				A854E85428F7F2DE00030E86 /* Sources */,
 				A854E85528F7F2DE00030E86 /* Frameworks */,
@@ -100,7 +129,7 @@
 				};
 			};
 			buildConfigurationList = A854E85228F7F2DE00030E86 /* Build configuration list for PBXProject "SwiftyLibAleksandra" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -127,12 +156,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A57FEEC3E9362D77E8A420E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftyLibAleksandra-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A854E85428F7F2DE00030E86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A854E85D28F7F2DF00030E86 /* SwiftyLibAleksandra.docc in Sources */,
+				A854E86528F7F42800030E86 /* SwiftyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +316,7 @@
 		};
 		A854E86228F7F2DF00030E86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 140E2E75082C19B040AB9142 /* Pods-SwiftyLibAleksandra.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -289,6 +345,7 @@
 		};
 		A854E86328F7F2DF00030E86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB88048DD0A43482C489EDC3 /* Pods-SwiftyLibAleksandra.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

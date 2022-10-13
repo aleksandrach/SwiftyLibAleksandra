@@ -1,0 +1,838 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		AC19F10B2BC2AC4E94CD31A1DBFE217F /* Adyen3DS2 */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E9E250F9851797B6A70E98AB80576673 /* Build configuration list for PBXAggregateTarget "Adyen3DS2" */;
+			buildPhases = (
+				B6616505A882E45A131F64D8F7AF5DFB /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = Adyen3DS2;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		055C5B656EA7E07863DAD577E9EB5A32 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A1A370712CAE06BF1BE027C8EDBE2B /* ApiResponse.swift */; };
+		05789053397A669EEDFE92C18C6F1E15 /* TokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D99514B75A02ADA6C502E3DBCE9AAE6 /* TokenRequest.swift */; };
+		0795CAF8FE9B11B04C1C34D99227140E /* ProcessOut-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE693BD57AB6B2429DC82706C0911C0 /* ProcessOut-dummy.m */; };
+		0D14FDD0927E2719ABEE3A957921BEDA /* FingerprintWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A527B1A86C44C2ABA09772E61F5A3A /* FingerprintWebView.swift */; };
+		1B06CEEDC083F5F90EA58E0AD623CBA8 /* IncrementAuthorizationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF39499CA68A44A1DBCCB7DC28D5E569 /* IncrementAuthorizationRequest.swift */; };
+		2877AF32DF80AB5D2A97BF4A18E490A9 /* ProcessOut-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D4D6ADC5D462C984A842950933DE599 /* ProcessOut-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB3300073BBBC34B1C5A1AB7D15E647 /* TokenizationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F0054B06DEBE033BCAC867C85C7229 /* TokenizationResult.swift */; };
+		4636DFB1E3B6C821798F06CDCFF217ED /* CardPaymentWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DEFFA9ACBED6AA83386CDB1EA024AB /* CardPaymentWebView.swift */; };
+		4C13526DB308BC8DCB4D9ED07FEA1C05 /* AuthorizationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E307F7EA17C551AF05F373B5F9F982D1 /* AuthorizationRequest.swift */; };
+		511149B045709D170C3576A89259F970 /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B304EFE617F247B4E72E9D07D879644 /* Invoice.swift */; };
+		5AE267C6274BDDC3F24AC9053668B36F /* AuthentificationChallengeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3361315D29C548E840097DADFD2480C /* AuthentificationChallengeData.swift */; };
+		5D4AF81BFA9AE02E4CB0523989E5792D /* FingerPrintWebViewSchemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4817E05576577CBAB57D1556314CEFA0 /* FingerPrintWebViewSchemeHandler.swift */; };
+		5E0515564F232312904A13BAFE2094EE /* CustomerActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E57A0EDA2426E06EE783423721D963 /* CustomerActionHandler.swift */; };
+		5FDFCD59A39925C67A25853961493AB6 /* ProcessOutRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92CAF6CA8F9A90DEB043DCFA0B2F945 /* ProcessOutRequestManager.swift */; };
+		60EE29528ED6DA007C2BEE93668BB160 /* MiscGatewayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB69AC0612E7C46AA19BE2A701BD4BF /* MiscGatewayRequest.swift */; };
+		61F17B5E751E67BDD500E54A748AAEC9 /* WebViewReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58913F393C82D0A1FC884394355CDB7 /* WebViewReturn.swift */; };
+		7231D78187B1094277CD78294F608E56 /* ProcessOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9757D0B3667EFA92F78FCB4451F96FF9 /* ProcessOut.swift */; };
+		79C577C25652E9DDB5C8A76C0EAD5851 /* CustomerTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E7113482165E30207508CE9A18015 /* CustomerTokenRequest.swift */; };
+		809806F310BA04C9DE57BDF9DF950D24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		80EA3A1F447696DB54924032D8357273 /* DirectoryServerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444A5138445BF49FDFBF527A26910170 /* DirectoryServerData.swift */; };
+		90AA22426680464B836279DEE912E0DB /* CardTokenWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8CB19FD966453AEBB47EF5B5C3CD81 /* CardTokenWebView.swift */; };
+		9C336CBE626DF0F83C2F50438C6845AD /* APMTokenReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9069E28DB7AFB2456397672541918 /* APMTokenReturn.swift */; };
+		A116A626B5C11C028C492AEF916353F2 /* ProcessOutException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E5146504C850C3CC5047A9D92DA09D /* ProcessOutException.swift */; };
+		A2A52E6CA028BC2F53A7EEE60478E9C9 /* AuthorizationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90578019F35B768BEA4BE814FAEE85F /* AuthorizationResult.swift */; };
+		A631B3A798634D2C1DBAD7DC72AF0F61 /* Pods-SwiftyLibAleksandra-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6192088827C8BBC038D525B3ABAA0E22 /* Pods-SwiftyLibAleksandra-dummy.m */; };
+		A8814C296F3E228EC2BEC48D46FF98E7 /* ProcessOutWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF49EB3A01371A1126C6DE3CC52040B /* ProcessOutWebView.swift */; };
+		AA6104E99806DF361AFFAA96DD5EDED0 /* GatewayConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB97FDD2796BB7775EF1A7D90BE8432D /* GatewayConfiguration.swift */; };
+		AC630C2F73231DA84B2B548C8FCF7952 /* CustomerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BA520A04EBB2BE6A3A4454AD762E02 /* CustomerRequest.swift */; };
+		ADB41129D8AB5CC841273299F5982374 /* ThreeDSHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D83D7E1C7B833C7562B9357147680D /* ThreeDSHandler.swift */; };
+		B6854B27F3939B721DD1AD429D7C2419 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CD99D57E4E4DA13E27F8E01679871B42 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E88C8B08D56CFCAB4203741CFD31265 /* RetryPolicy.swift */; };
+		CE8674F7F4518AAE5D8536E072B0FAD3 /* Pods-SwiftyLibAleksandra-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6159FB894C16B64DC69DD8CE91024873 /* Pods-SwiftyLibAleksandra-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4F6B215A833436980FFF24110892F44 /* CustomerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35B037E457AD781A6AD9BF4CC16B9A3 /* CustomerAction.swift */; };
+		EFC55DDE428CAA32D3CB7D3CCEC3BC74 /* ThreeDSFingerprintResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9A4F0188B1237143B394D58D1B072D /* ThreeDSFingerprintResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		096A2C3F517ECF030D793399C9ECE347 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC19F10B2BC2AC4E94CD31A1DBFE217F;
+			remoteInfo = Adyen3DS2;
+		};
+		0E6DB7515373EF58EAE507349F97DECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3386D53BC7DA45071FC1EA7213FCFC11;
+			remoteInfo = ProcessOut;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07BA520A04EBB2BE6A3A4454AD762E02 /* CustomerRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomerRequest.swift; path = ProcessOut/Classes/CustomerRequest.swift; sourceTree = "<group>"; };
+		17DEFFA9ACBED6AA83386CDB1EA024AB /* CardPaymentWebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardPaymentWebView.swift; path = ProcessOut/Classes/CardPaymentWebView.swift; sourceTree = "<group>"; };
+		1B304EFE617F247B4E72E9D07D879644 /* Invoice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Invoice.swift; path = ProcessOut/Classes/Invoice.swift; sourceTree = "<group>"; };
+		1BF479605148A782591D8A331E333476 /* Adyen3DS2-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Adyen3DS2-xcframeworks.sh"; sourceTree = "<group>"; };
+		22F0054B06DEBE033BCAC867C85C7229 /* TokenizationResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenizationResult.swift; path = ProcessOut/Classes/TokenizationResult.swift; sourceTree = "<group>"; };
+		230334A79DBB77A7F16FE5A46E0B161D /* Pods-SwiftyLibAleksandra-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftyLibAleksandra-acknowledgements.markdown"; sourceTree = "<group>"; };
+		24D83D7E1C7B833C7562B9357147680D /* ThreeDSHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreeDSHandler.swift; path = ProcessOut/Classes/ThreeDSHandler.swift; sourceTree = "<group>"; };
+		270F978E73C7D9C2186916CC955B0832 /* Adyen3DS2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Adyen3DS2.debug.xcconfig; sourceTree = "<group>"; };
+		2E59F85DBC9D79D6584A09254F146279 /* ProcessOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ProcessOut.debug.xcconfig; sourceTree = "<group>"; };
+		3BE9069E28DB7AFB2456397672541918 /* APMTokenReturn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APMTokenReturn.swift; path = ProcessOut/Classes/APMTokenReturn.swift; sourceTree = "<group>"; };
+		444A5138445BF49FDFBF527A26910170 /* DirectoryServerData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DirectoryServerData.swift; path = ProcessOut/Classes/DirectoryServerData.swift; sourceTree = "<group>"; };
+		45E57A0EDA2426E06EE783423721D963 /* CustomerActionHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomerActionHandler.swift; path = ProcessOut/Classes/CustomerActionHandler.swift; sourceTree = "<group>"; };
+		4817E05576577CBAB57D1556314CEFA0 /* FingerPrintWebViewSchemeHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FingerPrintWebViewSchemeHandler.swift; path = ProcessOut/Classes/FingerPrintWebViewSchemeHandler.swift; sourceTree = "<group>"; };
+		4AEBF8DF965E6391079500CD5DB8908A /* ProcessOut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ProcessOut.release.xcconfig; sourceTree = "<group>"; };
+		4C785D15810AD9209555B658BEC2CB96 /* Pods-SwiftyLibAleksandra-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftyLibAleksandra-Info.plist"; sourceTree = "<group>"; };
+		4DD14A8221264E90235E11602AAB82A7 /* Adyen3DS2.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = Adyen3DS2.xcframework; path = XCFramework/Dynamic/Adyen3DS2.xcframework; sourceTree = "<group>"; };
+		5221FA7267BAF9080F5669A1539C51EF /* ProcessOut-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ProcessOut-Info.plist"; sourceTree = "<group>"; };
+		527F9AB98BC8B2AC1DF88025B70176A6 /* ProcessOut.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ProcessOut.modulemap; sourceTree = "<group>"; };
+		57A527B1A86C44C2ABA09772E61F5A3A /* FingerprintWebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FingerprintWebView.swift; path = ProcessOut/Classes/FingerprintWebView.swift; sourceTree = "<group>"; };
+		5E8CB19FD966453AEBB47EF5B5C3CD81 /* CardTokenWebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardTokenWebView.swift; path = ProcessOut/Classes/CardTokenWebView.swift; sourceTree = "<group>"; };
+		5EE693BD57AB6B2429DC82706C0911C0 /* ProcessOut-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ProcessOut-dummy.m"; sourceTree = "<group>"; };
+		6159FB894C16B64DC69DD8CE91024873 /* Pods-SwiftyLibAleksandra-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftyLibAleksandra-umbrella.h"; sourceTree = "<group>"; };
+		6192088827C8BBC038D525B3ABAA0E22 /* Pods-SwiftyLibAleksandra-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftyLibAleksandra-dummy.m"; sourceTree = "<group>"; };
+		62E5146504C850C3CC5047A9D92DA09D /* ProcessOutException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcessOutException.swift; path = ProcessOut/Classes/ProcessOutException.swift; sourceTree = "<group>"; };
+		6C496D103B61CDA02984283262D9943E /* ProcessOut */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ProcessOut; path = ProcessOut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		711665A74244656000CB617F5AC3F8A8 /* Adyen3DS2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Adyen3DS2.release.xcconfig; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		776E7113482165E30207508CE9A18015 /* CustomerTokenRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomerTokenRequest.swift; path = ProcessOut/Classes/CustomerTokenRequest.swift; sourceTree = "<group>"; };
+		7D50A9B8EDE846CA1954807CE67745EB /* ProcessOut-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProcessOut-prefix.pch"; sourceTree = "<group>"; };
+		7D99514B75A02ADA6C502E3DBCE9AAE6 /* TokenRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenRequest.swift; path = ProcessOut/Classes/TokenRequest.swift; sourceTree = "<group>"; };
+		7E88C8B08D56CFCAB4203741CFD31265 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = ProcessOut/Classes/RetryPolicy.swift; sourceTree = "<group>"; };
+		8D4D6ADC5D462C984A842950933DE599 /* ProcessOut-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProcessOut-umbrella.h"; sourceTree = "<group>"; };
+		8D9A4F0188B1237143B394D58D1B072D /* ThreeDSFingerprintResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreeDSFingerprintResponse.swift; path = ProcessOut/Classes/ThreeDSFingerprintResponse.swift; sourceTree = "<group>"; };
+		93A1A370712CAE06BF1BE027C8EDBE2B /* ApiResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApiResponse.swift; path = ProcessOut/Classes/ApiResponse.swift; sourceTree = "<group>"; };
+		9757D0B3667EFA92F78FCB4451F96FF9 /* ProcessOut.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcessOut.swift; path = ProcessOut/Classes/ProcessOut.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3361315D29C548E840097DADFD2480C /* AuthentificationChallengeData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthentificationChallengeData.swift; path = ProcessOut/Classes/AuthentificationChallengeData.swift; sourceTree = "<group>"; };
+		A35B037E457AD781A6AD9BF4CC16B9A3 /* CustomerAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomerAction.swift; path = ProcessOut/Classes/CustomerAction.swift; sourceTree = "<group>"; };
+		A94FFDA6F6C5345CA097935D9B46D0B0 /* Pods-SwiftyLibAleksandra-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftyLibAleksandra-acknowledgements.plist"; sourceTree = "<group>"; };
+		AEF49EB3A01371A1126C6DE3CC52040B /* ProcessOutWebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcessOutWebView.swift; path = ProcessOut/Classes/ProcessOutWebView.swift; sourceTree = "<group>"; };
+		B3ED82690D82A3656B2D67E02BEACAD7 /* Pods-SwiftyLibAleksandra */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SwiftyLibAleksandra"; path = Pods_SwiftyLibAleksandra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B58913F393C82D0A1FC884394355CDB7 /* WebViewReturn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebViewReturn.swift; path = ProcessOut/Classes/WebViewReturn.swift; sourceTree = "<group>"; };
+		BB97FDD2796BB7775EF1A7D90BE8432D /* GatewayConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GatewayConfiguration.swift; path = ProcessOut/Classes/GatewayConfiguration.swift; sourceTree = "<group>"; };
+		C7BF637641F18CD4F0ED4151BC0EA2EE /* Pods-SwiftyLibAleksandra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyLibAleksandra.release.xcconfig"; sourceTree = "<group>"; };
+		D1030755C1D116A0B74CB26A885202C5 /* Pods-SwiftyLibAleksandra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyLibAleksandra.debug.xcconfig"; sourceTree = "<group>"; };
+		D40DDCC3F9B84AB010FD0D3C10FDC53F /* Pods-SwiftyLibAleksandra.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftyLibAleksandra.modulemap"; sourceTree = "<group>"; };
+		DFB69AC0612E7C46AA19BE2A701BD4BF /* MiscGatewayRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MiscGatewayRequest.swift; path = ProcessOut/Classes/MiscGatewayRequest.swift; sourceTree = "<group>"; };
+		E307F7EA17C551AF05F373B5F9F982D1 /* AuthorizationRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthorizationRequest.swift; path = ProcessOut/Classes/AuthorizationRequest.swift; sourceTree = "<group>"; };
+		E90578019F35B768BEA4BE814FAEE85F /* AuthorizationResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthorizationResult.swift; path = ProcessOut/Classes/AuthorizationResult.swift; sourceTree = "<group>"; };
+		E92CAF6CA8F9A90DEB043DCFA0B2F945 /* ProcessOutRequestManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcessOutRequestManager.swift; path = ProcessOut/Classes/ProcessOutRequestManager.swift; sourceTree = "<group>"; };
+		EF39499CA68A44A1DBCCB7DC28D5E569 /* IncrementAuthorizationRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IncrementAuthorizationRequest.swift; path = ProcessOut/Classes/IncrementAuthorizationRequest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7A7A08DE633412E382554C8493A2394 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809806F310BA04C9DE57BDF9DF950D24 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90F307B8CBBE04BF48E4BD87A5CEE83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6854B27F3939B721DD1AD429D7C2419 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4208E0E4A291D199D77F9E7BBA0D074D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DD14A8221264E90235E11602AAB82A7 /* Adyen3DS2.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48AC3E1F6B53E70225F9D9C3775BE6B2 /* Adyen3DS2 */ = {
+			isa = PBXGroup;
+			children = (
+				4208E0E4A291D199D77F9E7BBA0D074D /* Frameworks */,
+				AA4B65A447D6DD4ABB58896EDB9AFF4D /* Support Files */,
+			);
+			name = Adyen3DS2;
+			path = Adyen3DS2;
+			sourceTree = "<group>";
+		};
+		56C506DC3918ED2E01036367D572E4BF /* ProcessOut */ = {
+			isa = PBXGroup;
+			children = (
+				93A1A370712CAE06BF1BE027C8EDBE2B /* ApiResponse.swift */,
+				3BE9069E28DB7AFB2456397672541918 /* APMTokenReturn.swift */,
+				A3361315D29C548E840097DADFD2480C /* AuthentificationChallengeData.swift */,
+				E307F7EA17C551AF05F373B5F9F982D1 /* AuthorizationRequest.swift */,
+				E90578019F35B768BEA4BE814FAEE85F /* AuthorizationResult.swift */,
+				17DEFFA9ACBED6AA83386CDB1EA024AB /* CardPaymentWebView.swift */,
+				5E8CB19FD966453AEBB47EF5B5C3CD81 /* CardTokenWebView.swift */,
+				A35B037E457AD781A6AD9BF4CC16B9A3 /* CustomerAction.swift */,
+				45E57A0EDA2426E06EE783423721D963 /* CustomerActionHandler.swift */,
+				07BA520A04EBB2BE6A3A4454AD762E02 /* CustomerRequest.swift */,
+				776E7113482165E30207508CE9A18015 /* CustomerTokenRequest.swift */,
+				444A5138445BF49FDFBF527A26910170 /* DirectoryServerData.swift */,
+				57A527B1A86C44C2ABA09772E61F5A3A /* FingerprintWebView.swift */,
+				4817E05576577CBAB57D1556314CEFA0 /* FingerPrintWebViewSchemeHandler.swift */,
+				BB97FDD2796BB7775EF1A7D90BE8432D /* GatewayConfiguration.swift */,
+				EF39499CA68A44A1DBCCB7DC28D5E569 /* IncrementAuthorizationRequest.swift */,
+				1B304EFE617F247B4E72E9D07D879644 /* Invoice.swift */,
+				DFB69AC0612E7C46AA19BE2A701BD4BF /* MiscGatewayRequest.swift */,
+				9757D0B3667EFA92F78FCB4451F96FF9 /* ProcessOut.swift */,
+				62E5146504C850C3CC5047A9D92DA09D /* ProcessOutException.swift */,
+				E92CAF6CA8F9A90DEB043DCFA0B2F945 /* ProcessOutRequestManager.swift */,
+				AEF49EB3A01371A1126C6DE3CC52040B /* ProcessOutWebView.swift */,
+				7E88C8B08D56CFCAB4203741CFD31265 /* RetryPolicy.swift */,
+				8D9A4F0188B1237143B394D58D1B072D /* ThreeDSFingerprintResponse.swift */,
+				24D83D7E1C7B833C7562B9357147680D /* ThreeDSHandler.swift */,
+				22F0054B06DEBE033BCAC867C85C7229 /* TokenizationResult.swift */,
+				7D99514B75A02ADA6C502E3DBCE9AAE6 /* TokenRequest.swift */,
+				B58913F393C82D0A1FC884394355CDB7 /* WebViewReturn.swift */,
+				C7F179137419B6401F2588ADDBCC7C00 /* Support Files */,
+			);
+			name = ProcessOut;
+			path = ProcessOut;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		75D8DD7F9D9CE7AD75BF87DC3C71D82A /* Pods-SwiftyLibAleksandra */ = {
+			isa = PBXGroup;
+			children = (
+				D40DDCC3F9B84AB010FD0D3C10FDC53F /* Pods-SwiftyLibAleksandra.modulemap */,
+				230334A79DBB77A7F16FE5A46E0B161D /* Pods-SwiftyLibAleksandra-acknowledgements.markdown */,
+				A94FFDA6F6C5345CA097935D9B46D0B0 /* Pods-SwiftyLibAleksandra-acknowledgements.plist */,
+				6192088827C8BBC038D525B3ABAA0E22 /* Pods-SwiftyLibAleksandra-dummy.m */,
+				4C785D15810AD9209555B658BEC2CB96 /* Pods-SwiftyLibAleksandra-Info.plist */,
+				6159FB894C16B64DC69DD8CE91024873 /* Pods-SwiftyLibAleksandra-umbrella.h */,
+				D1030755C1D116A0B74CB26A885202C5 /* Pods-SwiftyLibAleksandra.debug.xcconfig */,
+				C7BF637641F18CD4F0ED4151BC0EA2EE /* Pods-SwiftyLibAleksandra.release.xcconfig */,
+			);
+			name = "Pods-SwiftyLibAleksandra";
+			path = "Target Support Files/Pods-SwiftyLibAleksandra";
+			sourceTree = "<group>";
+		};
+		90F9D014F78E4A04224668C92378D169 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3ED82690D82A3656B2D67E02BEACAD7 /* Pods-SwiftyLibAleksandra */,
+				6C496D103B61CDA02984283262D9943E /* ProcessOut */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA4B65A447D6DD4ABB58896EDB9AFF4D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BF479605148A782591D8A331E333476 /* Adyen3DS2-xcframeworks.sh */,
+				270F978E73C7D9C2186916CC955B0832 /* Adyen3DS2.debug.xcconfig */,
+				711665A74244656000CB617F5AC3F8A8 /* Adyen3DS2.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Adyen3DS2";
+			sourceTree = "<group>";
+		};
+		AAFE11394CCD6B2F7FE5207C6FB48AEC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48AC3E1F6B53E70225F9D9C3775BE6B2 /* Adyen3DS2 */,
+				56C506DC3918ED2E01036367D572E4BF /* ProcessOut */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C02989A8DCE6D27C271007CDD862F286 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				75D8DD7F9D9CE7AD75BF87DC3C71D82A /* Pods-SwiftyLibAleksandra */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C7F179137419B6401F2588ADDBCC7C00 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				527F9AB98BC8B2AC1DF88025B70176A6 /* ProcessOut.modulemap */,
+				5EE693BD57AB6B2429DC82706C0911C0 /* ProcessOut-dummy.m */,
+				5221FA7267BAF9080F5669A1539C51EF /* ProcessOut-Info.plist */,
+				7D50A9B8EDE846CA1954807CE67745EB /* ProcessOut-prefix.pch */,
+				8D4D6ADC5D462C984A842950933DE599 /* ProcessOut-umbrella.h */,
+				2E59F85DBC9D79D6584A09254F146279 /* ProcessOut.debug.xcconfig */,
+				4AEBF8DF965E6391079500CD5DB8908A /* ProcessOut.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ProcessOut";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				AAFE11394CCD6B2F7FE5207C6FB48AEC /* Pods */,
+				90F9D014F78E4A04224668C92378D169 /* Products */,
+				C02989A8DCE6D27C271007CDD862F286 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8647515BAEEC66C3F084D9D1528254EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2877AF32DF80AB5D2A97BF4A18E490A9 /* ProcessOut-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E86BC62AC39AE9284EFEB349F88A30FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8674F7F4518AAE5D8536E072B0FAD3 /* Pods-SwiftyLibAleksandra-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3386D53BC7DA45071FC1EA7213FCFC11 /* ProcessOut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 769A834B1A59B9ECBFB6F491BA943078 /* Build configuration list for PBXNativeTarget "ProcessOut" */;
+			buildPhases = (
+				8647515BAEEC66C3F084D9D1528254EC /* Headers */,
+				F38C33038A827D1E36F7A99CEDF411AA /* Sources */,
+				B7A7A08DE633412E382554C8493A2394 /* Frameworks */,
+				2D5D6513B4FDB710FAF02BFAE9167FBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProcessOut;
+			productName = ProcessOut;
+			productReference = 6C496D103B61CDA02984283262D9943E /* ProcessOut */;
+			productType = "com.apple.product-type.framework";
+		};
+		54E4A6F0948FFAF6D1AA0A114D4073E9 /* Pods-SwiftyLibAleksandra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F42663B8C7FBD5D1929B13F2939AD641 /* Build configuration list for PBXNativeTarget "Pods-SwiftyLibAleksandra" */;
+			buildPhases = (
+				E86BC62AC39AE9284EFEB349F88A30FD /* Headers */,
+				2CA162E4B1FF4AF3BA9FC0AF3DE5FFF2 /* Sources */,
+				D90F307B8CBBE04BF48E4BD87A5CEE83 /* Frameworks */,
+				C6DAC35295AE9944A58F0A82BB526E6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				387630A52ECB97CF18040FB1C926CA14 /* PBXTargetDependency */,
+				9DDB77383679E6B70B4B649ADC7ECFA9 /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftyLibAleksandra";
+			productName = Pods_SwiftyLibAleksandra;
+			productReference = B3ED82690D82A3656B2D67E02BEACAD7 /* Pods-SwiftyLibAleksandra */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 90F9D014F78E4A04224668C92378D169 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC19F10B2BC2AC4E94CD31A1DBFE217F /* Adyen3DS2 */,
+				54E4A6F0948FFAF6D1AA0A114D4073E9 /* Pods-SwiftyLibAleksandra */,
+				3386D53BC7DA45071FC1EA7213FCFC11 /* ProcessOut */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D5D6513B4FDB710FAF02BFAE9167FBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6DAC35295AE9944A58F0A82BB526E6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B6616505A882E45A131F64D8F7AF5DFB /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Adyen3DS2/Adyen3DS2-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Adyen3DS2/Adyen3DS2-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Adyen3DS2/Adyen3DS2-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CA162E4B1FF4AF3BA9FC0AF3DE5FFF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A631B3A798634D2C1DBAD7DC72AF0F61 /* Pods-SwiftyLibAleksandra-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F38C33038A827D1E36F7A99CEDF411AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				055C5B656EA7E07863DAD577E9EB5A32 /* ApiResponse.swift in Sources */,
+				9C336CBE626DF0F83C2F50438C6845AD /* APMTokenReturn.swift in Sources */,
+				5AE267C6274BDDC3F24AC9053668B36F /* AuthentificationChallengeData.swift in Sources */,
+				4C13526DB308BC8DCB4D9ED07FEA1C05 /* AuthorizationRequest.swift in Sources */,
+				A2A52E6CA028BC2F53A7EEE60478E9C9 /* AuthorizationResult.swift in Sources */,
+				4636DFB1E3B6C821798F06CDCFF217ED /* CardPaymentWebView.swift in Sources */,
+				90AA22426680464B836279DEE912E0DB /* CardTokenWebView.swift in Sources */,
+				E4F6B215A833436980FFF24110892F44 /* CustomerAction.swift in Sources */,
+				5E0515564F232312904A13BAFE2094EE /* CustomerActionHandler.swift in Sources */,
+				AC630C2F73231DA84B2B548C8FCF7952 /* CustomerRequest.swift in Sources */,
+				79C577C25652E9DDB5C8A76C0EAD5851 /* CustomerTokenRequest.swift in Sources */,
+				80EA3A1F447696DB54924032D8357273 /* DirectoryServerData.swift in Sources */,
+				0D14FDD0927E2719ABEE3A957921BEDA /* FingerprintWebView.swift in Sources */,
+				5D4AF81BFA9AE02E4CB0523989E5792D /* FingerPrintWebViewSchemeHandler.swift in Sources */,
+				AA6104E99806DF361AFFAA96DD5EDED0 /* GatewayConfiguration.swift in Sources */,
+				1B06CEEDC083F5F90EA58E0AD623CBA8 /* IncrementAuthorizationRequest.swift in Sources */,
+				511149B045709D170C3576A89259F970 /* Invoice.swift in Sources */,
+				60EE29528ED6DA007C2BEE93668BB160 /* MiscGatewayRequest.swift in Sources */,
+				7231D78187B1094277CD78294F608E56 /* ProcessOut.swift in Sources */,
+				0795CAF8FE9B11B04C1C34D99227140E /* ProcessOut-dummy.m in Sources */,
+				A116A626B5C11C028C492AEF916353F2 /* ProcessOutException.swift in Sources */,
+				5FDFCD59A39925C67A25853961493AB6 /* ProcessOutRequestManager.swift in Sources */,
+				A8814C296F3E228EC2BEC48D46FF98E7 /* ProcessOutWebView.swift in Sources */,
+				CD99D57E4E4DA13E27F8E01679871B42 /* RetryPolicy.swift in Sources */,
+				EFC55DDE428CAA32D3CB7D3CCEC3BC74 /* ThreeDSFingerprintResponse.swift in Sources */,
+				ADB41129D8AB5CC841273299F5982374 /* ThreeDSHandler.swift in Sources */,
+				2BB3300073BBBC34B1C5A1AB7D15E647 /* TokenizationResult.swift in Sources */,
+				05789053397A669EEDFE92C18C6F1E15 /* TokenRequest.swift in Sources */,
+				61F17B5E751E67BDD500E54A748AAEC9 /* WebViewReturn.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		387630A52ECB97CF18040FB1C926CA14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Adyen3DS2;
+			target = AC19F10B2BC2AC4E94CD31A1DBFE217F /* Adyen3DS2 */;
+			targetProxy = 096A2C3F517ECF030D793399C9ECE347 /* PBXContainerItemProxy */;
+		};
+		9DDB77383679E6B70B4B649ADC7ECFA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ProcessOut;
+			target = 3386D53BC7DA45071FC1EA7213FCFC11 /* ProcessOut */;
+			targetProxy = 0E6DB7515373EF58EAE507349F97DECA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		010EC00DFDC942C9A446F7135EB621AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 711665A74244656000CB617F5AC3F8A8 /* Adyen3DS2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30E0B9EFD9A5C45D0D351231E81B30B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7944BAA2C0D53195B3EF0888B407124D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E59F85DBC9D79D6584A09254F146279 /* ProcessOut.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ProcessOut/ProcessOut-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ProcessOut/ProcessOut-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ProcessOut/ProcessOut.modulemap";
+				PRODUCT_MODULE_NAME = ProcessOut;
+				PRODUCT_NAME = ProcessOut;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		808F0E4A71C3E1DFD60EAC690CBCFEB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 270F978E73C7D9C2186916CC955B0832 /* Adyen3DS2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80BF7DC7800014DD59DC967E0E89F6C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7BF637641F18CD4F0ED4151BC0EA2EE /* Pods-SwiftyLibAleksandra.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftyLibAleksandra/Pods-SwiftyLibAleksandra-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftyLibAleksandra/Pods-SwiftyLibAleksandra.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9CE411903C4E39D4E42B7B58BFAB2220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1030755C1D116A0B74CB26A885202C5 /* Pods-SwiftyLibAleksandra.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftyLibAleksandra/Pods-SwiftyLibAleksandra-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftyLibAleksandra/Pods-SwiftyLibAleksandra.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BCF2C730077CF043B691A444B4A6E6D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AEBF8DF965E6391079500CD5DB8908A /* ProcessOut.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ProcessOut/ProcessOut-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ProcessOut/ProcessOut-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ProcessOut/ProcessOut.modulemap";
+				PRODUCT_MODULE_NAME = ProcessOut;
+				PRODUCT_NAME = ProcessOut;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F4FF6A0D1970CA9705974E3CB2134802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4FF6A0D1970CA9705974E3CB2134802 /* Debug */,
+				30E0B9EFD9A5C45D0D351231E81B30B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		769A834B1A59B9ECBFB6F491BA943078 /* Build configuration list for PBXNativeTarget "ProcessOut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7944BAA2C0D53195B3EF0888B407124D /* Debug */,
+				BCF2C730077CF043B691A444B4A6E6D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9E250F9851797B6A70E98AB80576673 /* Build configuration list for PBXAggregateTarget "Adyen3DS2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				808F0E4A71C3E1DFD60EAC690CBCFEB9 /* Debug */,
+				010EC00DFDC942C9A446F7135EB621AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F42663B8C7FBD5D1929B13F2939AD641 /* Build configuration list for PBXNativeTarget "Pods-SwiftyLibAleksandra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CE411903C4E39D4E42B7B58BFAB2220 /* Debug */,
+				80BF7DC7800014DD59DC967E0E89F6C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
