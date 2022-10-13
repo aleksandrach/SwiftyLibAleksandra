@@ -17,5 +17,7 @@ This CocoaPods library helps you perform calculation.
 
   spec.source        = { :git => "https://github.com/aleksandrach/SwiftyLibAleksandra.git", :tag => "#{spec.version}" }
   spec.source_files  = "SwiftyLibAleksandra/**/*.{h,m,swift}"
+  spec.dependency 'ProcessOut'
+  spec.dependency 'Adyen3DS2'
 
 end
